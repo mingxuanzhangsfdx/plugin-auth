@@ -4,10 +4,13 @@
  * Licensed under the BSD 3-Clause license.
  * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
-
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { ConfigContents, SfdcUrl } from '@salesforce/core';
 import { assert, expect } from 'chai';
-import { TestContext, uniqid } from '@salesforce/core/lib/testSetup.js';
+import { TestContext, uniqid } from '@salesforce/core';
 import { Common } from '../src/common.js';
 
 const projectSetup = async ($$: TestContext, inProject = true, contents?: ConfigContents): Promise<void> => {

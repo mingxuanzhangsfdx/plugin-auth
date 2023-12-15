@@ -6,11 +6,14 @@
  */
 
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { AuthFields, AuthInfo, SfError, StateAggregator } from '@salesforce/core';
 import { stubMethod } from '@salesforce/ts-sinon';
 import { assert, expect } from 'chai';
-import { TestContext } from '@salesforce/core/lib/testSetup.js';
+import { TestContext } from '@salesforce/core';
 import { Env } from '@salesforce/kit';
 import { Config } from '@oclif/core';
 import Store from '../../../../src/commands/org/login/access-token.js';

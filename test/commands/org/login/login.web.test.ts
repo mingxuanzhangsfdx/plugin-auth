@@ -6,10 +6,13 @@
  */
 
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { Config } from '@oclif/core';
 import { AuthFields, AuthInfo, Global, Mode, SfError } from '@salesforce/core';
-import { MockTestOrgData, TestContext } from '@salesforce/core/lib/testSetup.js';
+import { MockTestOrgData, TestContext } from '@salesforce/core';
 import { StubbedType, stubInterface, stubMethod } from '@salesforce/ts-sinon';
 import { assert, expect } from 'chai';
 import { Env } from '@salesforce/kit';

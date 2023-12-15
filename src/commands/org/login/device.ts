@@ -9,7 +9,7 @@ import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { AuthFields, AuthInfo, DeviceOauthService, Messages, OAuth2Config } from '@salesforce/core';
 import { Flags, loglevel } from '@salesforce/sf-plugins-core';
-import { DeviceCodeResponse } from '@salesforce/core/lib/deviceOauthService.js';
+import { DeviceCodeResponse } from '@salesforce/core';
 import { ux } from '@oclif/core';
 import { AuthBaseCommand } from '../../../authBaseCommand.js';
 import { Common } from '../../../common.js';

@@ -4,8 +4,11 @@
  * Licensed under the BSD 3-Clause license.
  * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
-
-import { MockTestOrgData, TestContext } from '@salesforce/core/lib/testSetup.js';
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+import { MockTestOrgData, TestContext } from '@salesforce/core';
 import { Config } from '@oclif/core';
 import { expect } from 'chai';
 import { AuthInfo } from '@salesforce/core';

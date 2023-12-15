@@ -6,11 +6,14 @@
  */
 
 /* eslint-disable camelcase */
-
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { AuthFields, AuthInfo, DeviceOauthService, Global, Mode } from '@salesforce/core';
-import { MockTestOrgData, TestContext } from '@salesforce/core/lib/testSetup.js';
+import { MockTestOrgData, TestContext } from '@salesforce/core';
 import { StubbedType, stubInterface, stubMethod } from '@salesforce/ts-sinon';
-import { DeviceCodeResponse } from '@salesforce/core/lib/deviceOauthService.js';
+import { DeviceCodeResponse } from '@salesforce/core';
 import { expect } from 'chai';
 import { Config } from '@oclif/core';
 import { SfCommand } from '@salesforce/sf-plugins-core';
